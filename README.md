@@ -1,5 +1,9 @@
 # AI Second Brain Skills
 
+<!-- yarkr:badges:start -->
+[![Indexed on Yarkr](https://api.yarkr.com/functions/v1/api/api/v1/badges/repos/JensHeitmann/ai-second-brain-skills/version.svg)](https://yarkr.com/arks/nulightjens/ai-second-brain-skills)
+<!-- yarkr:badges:end -->
+
 > Your folder becomes your app. No database. No embeddings. Just markdown — and an AI that knows where to look.
 
 Two Claude Code skills that turn any folder into a compounding, AI-maintained knowledge base. Based on Andrej Karpathy's [LLM wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), with a research loop inspired by his [autoresearch](https://github.com/karpathy/autoresearch) project.
@@ -65,6 +69,39 @@ Symlinks mean `git pull` in `~/ai-second-brain-skills` updates both skills insta
 > "What skills do you have available for building an LLM wiki?"
 
 You should see `llm-wiki-setup` and `wiki-self-heal` in the response.
+
+<!-- yarkr:install:start -->
+## Install with Yarkr
+
+This repo is indexed on [Yarkr](https://yarkr.com/arks/nulightjens/ai-second-brain-skills) as the ark [nulightjens/ai-second-brain-skills](https://yarkr.com/arks/nulightjens/ai-second-brain-skills), so its skills install into Claude Code, Codex, Cursor and other agent harnesses with one command.
+
+### CLI
+
+Install the whole ark, which Yarkr keeps equal to this repo:
+
+```bash
+npx yarkr-cli sync nulightjens/ai-second-brain-skills
+```
+
+Or add individual skills:
+
+```bash
+npx yarkr-cli add skill:nulightjens/ai-second-brain-skills/llm-wiki-setup
+npx yarkr-cli add skill:nulightjens/ai-second-brain-skills/wiki-self-heal
+```
+
+No Node.js? `curl -fsSL https://yarkr.com/install.sh | sh` (macOS, Linux) or `irm https://yarkr.com/install.ps1 | iex` (Windows PowerShell) installs `yarkr` as a standalone binary; then type `yarkr` in place of `npx yarkr-cli`.
+
+### MCP
+
+Connect your agent to the ark over MCP:
+
+```bash
+npx yarkr-cli mcp add nulightjens/ai-second-brain-skills
+```
+
+Or point any MCP client at `https://api.yarkr.com/functions/v1/api/mcp/o/nulightjens/ai-second-brain-skills`.
+<!-- yarkr:install:end -->
 
 ## Use it
 
